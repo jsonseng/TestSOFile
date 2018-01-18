@@ -1,13 +1,14 @@
 #include <iostream>  
-#include <cstdlib>  
+// #include <cstdlib>  
 #include <dlfcn.h>  
   
-using namespace std;  
+// using namespace std;  
   
 int main(int argc, char **argv) {  
     if(argc != 2) {  
-        cout << "argument error!" << endl;  
-        exit(1);  
+        printf("argument error!");
+        // cout << "argument error!" << endl;  
+        return 1;  
     }  
   
     //pointer to function  
@@ -18,8 +19,8 @@ int main(int argc, char **argv) {
     void *handle = dlopen(argv[1], RTLD_NOW);  
       
     if(!handle) {  
-        cout << "load " << argv[1] << "failed! " << dlerror() << endl;  
-        exit(1);  
+        printf("load failed!");
+        return 1;  
     }  
   
     //clear error info  
@@ -28,8 +29,8 @@ int main(int argc, char **argv) {
     pf_t pf  = (pf_t)dlsym(handle, "HelloFunc");  
     err = dlerror();  
     if(err) {  
-        cout << "can't find symbol HelloFunc! " << err << endl;  
-        exit(1);  
+        printf("can't find symbol HelloFunc! ");  
+        return 1;  
     }  
   
     //call function by pointer  
