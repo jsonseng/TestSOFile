@@ -1,10 +1,8 @@
 cmake_minimum_required(VERSION 3.4)
 
-project(Test)
+project(TestDynamic)
 
-SET(executable_src test.cc)
+ADD_EXECUTABLE(TestDynamic test.cc)
 
-link_libraries(Test ./libhello.so)
-
-add_executable(Test ${executable_src})
+target_link_libraries(TestDynamic ./libhello.so)
 
