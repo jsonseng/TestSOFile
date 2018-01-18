@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.4)
 
 SET(LIBHELLO_SRC hello.c)
 ADD_LIBRARY(hello SHARED ${LIBHELLO_SRC})
