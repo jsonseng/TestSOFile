@@ -1,0 +1,6 @@
+/Users/sengseng/Downloads/Test/t3/build/CMakeFiles/rebuild_cache.dir
+/Users/sengseng/Downloads/Test/t3/build/CMakeFiles/edit_cache.dir
+/Users/sengseng/Downloads/Test/t3/build/lib/CMakeFiles/rebuild_cache.dir
+/Users/sengseng/Downloads/Test/t3/build/lib/CMakeFiles/edit_cache.dir
+/Users/sengseng/Downloads/Test/t3/build/lib/CMakeFiles/hello_static.dir
+/Users/sengseng/Downloads/Test/t3/build/lib/CMakeFiles/hello.dir
