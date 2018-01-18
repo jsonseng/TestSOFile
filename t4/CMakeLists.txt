@@ -4,5 +4,5 @@ project(TestDynamic)
 
 ADD_EXECUTABLE(TestDynamic test.cc)
 
-target_link_libraries(TestDynamic ./libhello.so)
+# target_link_libraries(TestDynamic ./libhello.so)
 
